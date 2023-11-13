@@ -130,5 +130,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-
+# Cart session configurations
 CART_SESSION_ID = 'cart'
+
+
+# Email server configuration
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'sharkteamvi6@gmail.com'
+EMAIL_HOST_PASSWORD = 'keanzibldwoypqew'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

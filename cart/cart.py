@@ -69,3 +69,10 @@ class Cart:
         Calculate the total cost of the items in the cart
         """
         return sum(Decimal(item['price']) * item['quantity'] for item in self.cart.values())
+    
+    def clear(self):
+        """
+        Remove all items in a cart from session
+        """
+        del self.session[settings.CART_SESSION_ID]
+        self.save()
